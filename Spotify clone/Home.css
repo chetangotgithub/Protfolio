@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.441);
+    height: 80px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#logo{
+    padding: 5px 5px;
+    width: 140px;
+
+}
+#logo:hover{
+    background-color: white;
+    transition: 0.2s;
+}
+nav ul li{
+    margin-top: 10px;;
+}
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+    color: white;
+    padding: 10px 10px;
+    width: 100px;
+}
+
+nav ul li:hover a {
+    background-color: white;
+    color: rgb(26, 33, 174);
+    transition: 0.3s;
+}
+
+nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+
+}
+
+/* @media screen and (max-width:800px) {
+    nav ul{
+        flex-direction: column;
+    }
+} */
+
+.center {
+    height: 78vh;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:120px ;
+}
+.center .poster img{
+    width: 350px;
+}
+.center .listitems{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    align-items: center;
+}
+.center .listitems .item{
+    display: flex;
+        background-color: white;
+        border: 2px solid red;
+        margin: 10px 20px;
+        border-radius: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        width: 600px;
+        cursor: pointer;
+}
+.center .listitems .item:hover{
+    background-color: rgb(26, 33, 174);
+    color: white;
+    transition: 0.2s;
+}
+.center .listitems .item img{
+    margin-left: 20px;
+    width: 30px;
+    border-radius: 50%;
+}
+.center .listitems .item i{
+    margin-right: 20px;
+}
+
+@media screen and (max-width:1080px) {
+    body {
+        background-image: url("../images/background-image-after.jpg");
+
+    }
+
+    .center {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .center .listitems .item{
+        width: 400px;
+    }
+}
+.play {
+    position: sticky;
+    background-image: linear-gradient(to right,rgba(29, 35, 94, 0.7), rgba(4, 28, 62, 0.7),rgba(0, 0, 0, 0.7));
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+}
+#myprogressbar{
+    transition: 0.3s;
+}
+#playicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#playicon i {
+    cursor: pointer;
+    margin: 10px 10px;
+    color: white;
+}
+
+div input {
+    width: 80vw;
+
+}
